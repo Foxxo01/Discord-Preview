@@ -1,4 +1,4 @@
-# Discord Versions Hub
+# Discord Preview
 
 Discord'un Stable, Beta/PTB ve Alpha/Canary sürümlerine ve resmi Discord kaynaklarına hızlı erişim sağlayan basit bir web projesi.
 
