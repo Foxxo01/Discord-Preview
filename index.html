@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discord Versions Hub</title>
+  <meta name="description"
+        content="Discord Stable, PTB ve Canary sürümleri ile resmi Discord bağlantıları.">
+
+  <!-- Discord Components V2 Link Preview -->
+  <script id="discord:component-embed" type="application/json">
+  {
+    "components": [
+      {
+        "type": 17,
+        "components": [
+          {
+            "type": 10,
+            "content": "# Discord Versions Hub\nDiscord sürümleri ve resmi kaynaklara hızlı erişim."
+          },
+          {
+            "type": 14,
+            "spacing": 1
+          },
+          {
+            "type": 10,
+            "content": "**Sürümler**\n🟢 Stable — Normal sürüm\n🔵 PTB — Beta / Public Test Build\n🟣 Canary — Alpha / deneysel sürüm"
+          },
+          {
+            "type": 1,
+            "components": [
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Stable",
+                "url": "https://discord.com/app"
+              },
+              {
+                "type": 2,
+                "style": 5,
+                "label": "PTB",
+                "url": "https://ptb.discord.com/app"
+              },
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Canary",
+                "url": "https://canary.discord.com/app"
+              }
+            ]
+          },
+          {
+            "type": 14,
+            "spacing": 1
+          },
+          {
+            "type": 10,
+            "content": "**Resmi Discord kaynakları**"
+          },
+          {
+            "type": 1,
+            "components": [
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Support",
+                "url": "https://support.discord.com/"
+              },
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Developer Portal",
+                "url": "https://discord.com/developers/applications"
+              },
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Developers",
+                "url": "https://discord.com/developers"
+              }
+            ]
+          },
+          {
+            "type": 1,
+            "components": [
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Download",
+                "url": "https://discord.com/download"
+              },
+              {
+                "type": 2,
+                "style": 5,
+                "label": "Testing Clients",
+                "url": "https://support.discord.com/hc/en-us/articles/360035675191-Discord-Testing-Clients"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d10;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 18px 7%;
+      background: #111318;
+      border-bottom: 1px solid #292d35;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .badge {
+      padding: 7px 12px;
+      border: 1px solid #343943;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #b5bac1;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 8vw, 70px);
+      margin: 0 0 15px;
+    }
+
+    .hero p {
+      color: #b5bac1;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #111318;
+      border: 1px solid #292d35;
+      border-radius: 18px;
+      padding: 24px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #5865f2;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #b5bac1;
+      line-height: 1.5;
+      min-height: 48px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 16px;
+      margin-top: 8px;
+      background: #5865f2;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: #20242b;
+    }
+
+    footer {
+      text-align: center;
+      color: #777d87;
+      padding: 35px 20px;
+      border-top: 1px solid #292d35;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Discord Versions Hub</div>
+  <div class="badge">Unofficial</div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Discord Versions</h1>
+
+    <p>
+      Stable, PTB ve Canary sürümlerine
+      ve resmi Discord kaynaklarına hızlı erişim.
+    </p>
+  </section>
+
+  <section class="grid">
+
+    <!-- STABLE -->
+    <div class="card">
+      <h2>🟢 Stable</h2>
+
+      <p>
+        Discord'un standart ve kararlı sürümü.
+      </p>
+
+      <a class="button"
+         href="https://discord.com/app">
+        Discord'u Aç
+      </a>
+    </div>
+
+    <!-- PTB -->
+    <div class="card">
+      <h2>🔵 Beta / PTB</h2>
+
+      <p>
+        Yeni özellikleri daha erken denemek için
+        Public Test Build.
+      </p>
+
+      <a class="button"
+         href="https://ptb.discord.com/app">
+        PTB'yi Aç
+      </a>
+    </div>
+
+    <!-- CANARY -->
+    <div class="card">
+      <h2>🟣 Alpha / Canary</h2>
+
+      <p>
+        Daha deneysel ve daha sık güncellenen
+        test sürümü.
+      </p>
+
+      <a class="button"
+         href="https://canary.discord.com/app">
+        Canary'yi Aç
+      </a>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="card">
+      <h2>🛟 Support</h2>
+
+      <p>
+        Discord yardım merkezi ve destek makaleleri.
+      </p>
+
+      <a class="button secondary"
+         href="https://support.discord.com/">
+        Support
+      </a>
+    </div>
+
+    <!-- DEVELOPER PORTAL -->
+    <div class="card">
+      <h2>⚙️ Developer Portal</h2>
+
+      <p>
+        Discord uygulamalarını ve bot projelerini yönet.
+      </p>
+
+      <a class="button secondary"
+         href="https://discord.com/developers/applications">
+        Developer Portal
+      </a>
+    </div>
+
+    <!-- DEVELOPERS -->
+    <div class="card">
+      <h2>👨‍💻 Developers</h2>
+
+      <p>
+        Discord API ve geliştirici kaynakları.
+      </p>
+
+      <a class="button secondary"
+         href="https://discord.com/developers">
+        Developers
+      </a>
+    </div>
+
+    <!-- DOWNLOAD -->
+    <div class="card">
+      <h2>📥 Download</h2>
+
+      <p>
+        Discord'un resmi indirme sayfası.
+      </p>
+
+      <a class="button secondary"
+         href="https://discord.com/download">
+        Download
+      </a>
+    </div>
+
+    <!-- TESTING CLIENTS -->
+    <div class="card">
+      <h2>🧪 Testing Clients</h2>
+
+      <p>
+        Discord'un resmi test istemcileri hakkında
+        bilgi.
+      </p>
+
+      <a class="button secondary"
+         href="https://support.discord.com/hc/en-us/articles/360035675191-Discord-Testing-Clients">
+        Resmi Sayfa
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  - URRally (VP of Engineers)
+</footer>
+
+</body>
+</html>
